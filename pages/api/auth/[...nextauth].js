@@ -8,7 +8,8 @@ const options = {
       clientSecret: process.env.GITHUB_SECRET,
       authorization: { params: { scope: 'notifications' } }
     })
-  ]
+  ],
+  secret: process.env.NEXTAUTH_URL
 }
 
 // eslint-disable-next-line import/no-anonymous-default-export
